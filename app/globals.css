@@ -1,26 +1,120 @@
 @import "tailwindcss";
 
 :root {
+  /* Brand Color Palette Definition */
+  --brand-navy-950: #060d1b;
+  /* Ultra Deep Luxury Navy */
+  --brand-navy-900: #0a192f;
+  /* Primary Navy Background */
+  --brand-navy-800: #112240;
+  /* Card & Surface Navy */
+  --brand-navy-700: #1d3557;
+  /* Accent Blue/Navy */
+
+  --brand-gold-300: #f3e5ab;
+  /* Soft Champagne Gold */
+  --brand-gold-400: #dfb15b;
+  /* Light Metallic Gold */
+  --brand-gold-500: #c5a059;
+  /* Primary Regal Gold Accent */
+  --brand-gold-600: #a37d36;
+  /* Deep Gold Highlight */
+
+  --brand-black-950: #090a0f;
+  /* Obsidian Black */
+  --brand-black-900: #12131a;
+  /* Dark Surface Charcoal */
+  --brand-black-800: #1c1e29;
+  /* Card Charcoal */
+
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #090a0f;
+  --card-bg: #f8fafc;
+  --border-color: #e2e8f0;
 }
 
 @theme inline {
+  /* Dynamic Tailwind Color Bindings */
+  --color-navy-950: var(--brand-navy-950);
+  --color-navy-900: var(--brand-navy-900);
+  --color-navy-800: var(--brand-navy-800);
+  --color-navy-700: var(--brand-navy-700);
+
+  --color-gold-300: var(--brand-gold-300);
+  --color-gold-400: var(--brand-gold-400);
+  --color-gold-500: var(--brand-gold-500);
+  --color-gold-600: var(--brand-gold-600);
+
+  --color-black-950: var(--brand-black-950);
+  --color-black-900: var(--brand-black-900);
+  --color-black-800: var(--brand-black-800);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--card-bg);
+
+  /* Modern Font Setup */
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Smooth Scrolling & Base Optimizations */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar in Luxury Gold & Navy */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5a059;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dfb15b;
+}
+
+/* Custom Gold Gradient Utilities & Utility Classes */
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #f3e5ab 0%, #c5a059 50%, #a37d36 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, #dfb15b 0%, #c5a059 50%, #a37d36 100%);
+  }
+
+  .bg-navy-gradient {
+    background: linear-gradient(180deg, #0a192f 0%, #060d1b 100%);
+  }
+
+  .gold-border-glow {
+    box-shadow: 0 0 15px rgba(197, 160, 89, 0.25);
+    border: 1px solid rgba(197, 160, 89, 0.4);
+  }
+
+  .glass-navy {
+    background: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 160, 89, 0.2);
+  }
 }
