@@ -4,14 +4,16 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Map from "@/components/Map";
 import AboutHero from "@/components/About/AboutHero";
-import { homeFaqs } from "../data/faqData";
+import { aboutFaqs } from "../data/faqData";
+import AboutDetails from "@/components/About/AboutDetails";
 
 export default function Home() {
     return (
         <>
             <Navbar />
             <AboutHero />
-            <FAQs items={homeFaqs} />
+            <AboutDetails />
+            <FAQs items={aboutFaqs} />
             <Footer />
         </>
     );

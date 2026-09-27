@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Services from "@/components/Service";
 import { homeFaqs } from "./data/faqData";
 import Map from "@/components/Map";
+import HomeLead from "@/components/HomeLead";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <Services />
       <FAQs items={homeFaqs} />
+      <HomeLead />
       <Map />
       <Footer />
     </>

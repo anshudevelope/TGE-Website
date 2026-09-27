@@ -16,6 +16,7 @@ import {
     Sparkles,
     Compass,
 } from "lucide-react";
+import { useLeadModal } from "@/app/context/LeadModalContext";
 
 // Mega-menu items tailored for Prayagraj Real Estate
 const servicesMenu = [
@@ -58,6 +59,7 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const { openModal } = useLeadModal();
 
     // Auto Hide / Show Navbar on Scroll
     useEffect(() => {
@@ -124,8 +126,8 @@ export default function Navbar() {
                             <button
                                 type="button"
                                 className={`flex items-center gap-1.5 text-sm font-semibold px-4 py-2 rounded-full cursor-pointer transition-all ${activeDropdown === "services"
-                                        ? "bg-amber-500/10 text-amber-700"
-                                        : "text-slate-700 hover:text-slate-950 hover:bg-white"
+                                    ? "bg-amber-500/10 text-amber-700"
+                                    : "text-slate-700 hover:text-slate-950 hover:bg-white"
                                     }`}
                             >
                                 <span>Services</span>
@@ -210,8 +212,8 @@ export default function Navbar() {
                             <button
                                 type="button"
                                 className={`flex items-center gap-1.5 text-sm font-semibold px-4 py-2 rounded-full cursor-pointer transition-all ${activeDropdown === "locations"
-                                        ? "bg-amber-500/10 text-amber-700"
-                                        : "text-slate-700 hover:text-slate-950 hover:bg-white"
+                                    ? "bg-amber-500/10 text-amber-700"
+                                    : "text-slate-700 hover:text-slate-950 hover:bg-white"
                                     }`}
                             >
                                 <MapPin className="w-3.5 h-3.5 text-amber-600" />
@@ -293,13 +295,12 @@ export default function Navbar() {
                             </div>
                         </a>
 
-                        <Link
-                            href="/list-property"
+                        <button
+                            onClick={() => openModal("Want to Buy - Plot")}
                             className="px-5 py-2.5 rounded-full bg-slate-900 text-amber-400 font-bold text-xs tracking-wide shadow-md hover:bg-slate-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-1.5 cursor-pointer border border-amber-500/30"
                         >
-                            <PlusCircle className="w-4 h-4 text-amber-400" />
-                            Post Property
-                        </Link>
+                            Get Free Consultation
+                        </button>
                     </div>
 
                     {/* Mobile Menu Toggle Button */}
