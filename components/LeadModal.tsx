@@ -186,7 +186,7 @@ export default function LeadModal() {
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-4">
                                     <div className="space-y-1">
-                                        <h4 className="text-xl font-extrabold text-slate-900">
+                                        <h4 className="text-xl font-bold text-slate-900">
                                             Property Requirement Form
                                         </h4>
                                         <p className="text-xs text-slate-500">

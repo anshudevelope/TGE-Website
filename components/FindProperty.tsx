@@ -145,7 +145,7 @@ export default function FindProperty() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.1 }}
                         >
-                            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.15]">
                                 Find Your Dream Space in <br className="hidden sm:inline" />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d4af37] via-[#f3e5ab] to-[#c5a059]">
                                     Prayagraj (Allahabad)
@@ -299,7 +299,7 @@ export default function FindProperty() {
                             className="bg-gradient-to-b from-[#112240] to-[#0a192f] border-2 border-[#c5a059]/40 rounded-3xl p-6 sm:p-7 shadow-2xl relative overflow-hidden"
                         >
                             {/* Subtle top ribbon */}
-                            <div className="absolute top-0 right-0 bg-[#c5a059] text-slate-950 font-extrabold text-[10px] uppercase tracking-wider px-4 py-1 rounded-bl-xl shadow-md">
+                            <div className="absolute top-0 right-0 bg-[#c5a059] text-slate-950 font-bold text-[10px] uppercase tracking-wider px-4 py-1 rounded-bl-xl shadow-md">
                                 VIP Callback
                             </div>
 
@@ -423,28 +423,28 @@ export default function FindProperty() {
                     className="mt-12 sm:mt-16 pt-8 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
                 >
                     <div className="space-y-1">
-                        <p className="text-2xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-[#c5a059]">
+                        <p className="text-2xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-[#c5a059]">
                             {stats.propertiesSold.toLocaleString()}+
                         </p>
                         <p className="text-xs sm:text-sm text-slate-400 font-medium">Properties Delivered</p>
                     </div>
 
                     <div className="space-y-1">
-                        <p className="text-2xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#d4af37] to-white">
+                        <p className="text-2xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#d4af37] to-white">
                             {stats.happyFamilies.toLocaleString()}+
                         </p>
                         <p className="text-xs sm:text-sm text-slate-400 font-medium">Happy Families in Prayagraj</p>
                     </div>
 
                     <div className="space-y-1">
-                        <p className="text-2xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-[#c5a059]">
+                        <p className="text-2xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-[#c5a059]">
                             {stats.activeListings}+
                         </p>
                         <p className="text-xs sm:text-sm text-slate-400 font-medium">Verified Active Listings</p>
                     </div>
 
                     <div className="space-y-1">
-                        <p className="text-2xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#d4af37] to-white">
+                        <p className="text-2xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#d4af37] to-white">
                             100%
                         </p>
                         <p className="text-xs sm:text-sm text-slate-400 font-medium">RERA & Legal Verification</p>

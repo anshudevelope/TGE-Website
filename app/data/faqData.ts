@@ -39,7 +39,7 @@ export const homeFaqs: FAQItem[] = [
         id: "home-6",
         question: "How can I schedule a free site visit or consultation?",
         answer:
-            "You can click on any 'Get Free Consultation' button on our website to visit our Contact page, or call our team directly at +91 98765 43210. We arrange hassle-free site visits at your convenience.",
+            "You can click on any 'Get Free Consultation' button on our website to visit our Contact page, or call our team directly at +91 7388 481515. We arrange hassle-free site visits at your convenience.",
     },
 ];
 
@@ -79,5 +79,62 @@ export const aboutFaqs: FAQItem[] = [
         question: "Does The Great Empire Group work with channel partners and property associates?",
         answer:
             "Yes. We maintain a strong network of trusted real estate channel partners, developers, and investment associates across Uttar Pradesh to ensure access to top-tier commercial and residential land deals.",
+    },
+];
+export const consultationFaqs: FAQItem[] = [
+ {
+        id: "faq-1",
+        question: "What does a property consultant in Prayagraj do?",
+        answer:
+            "A property consultant helps clients buy, sell, rent, or invest in real estate. This can include shortlisting suitable properties, coordinating site visits, reviewing available documentation, discussing pricing, assisting with negotiations, and guiding clients through registry and other paperwork involved in the property transaction.",
+    },
+
+    {
+        id: "faq-2",
+        question: "Why should I hire The Great Empire Group as my property consultant in Prayagraj?",
+        answer:
+            "The Great Empire Group provides property consultancy with a focus on verified listings, transparent communication, local market knowledge, and transaction support. Our team helps clients understand available property options, compare opportunities, coordinate site visits, and navigate documentation so they can make informed real estate decisions based on their requirements.",
+    },
+
+    {
+        id: "faq-3",
+        question: "Which areas in Prayagraj are best for buying a plot or flat?",
+        answer:
+            "The right area depends on your budget, property type, lifestyle needs, and investment purpose. Civil Lines may suit buyers seeking a central premium locality, while Naini, Jhunsi, Jhalwa, and Phaphamau offer different residential and development opportunities. We help clients explore locations according to their specific requirements.",
+    },
+
+    {
+        id: "faq-4",
+        question: "How do I check if a property in Prayagraj is legally clear?",
+        answer:
+            "Property verification can include checking the title deed, ownership records, encumbrance details, relevant development authority approvals, RERA registration where applicable, and mutation records. Our team can guide buyers through the documentation and verification process and help identify the records that should be reviewed before proceeding with a transaction.",
+    },
+
+    {
+        id: "faq-5",
+        question: "Do you charge a consultation fee?",
+        answer:
+            "No, we do not charge a consultation fee for discussing your property requirements or providing initial guidance. However, if you buy or sell a property through our consultancy, a simple percentage-based service or brokerage amount may apply. The amount depends on the property's value and the role and services involved.",
+    },
+
+    {
+        id: "faq-6",
+        question: "Can NRIs buy property in Prayagraj through you?",
+        answer:
+            "We can assist NRIs with understanding available property options, coordinating property discussions, arranging virtual or in-person site visits, and guiding them regarding documentation and transaction procedures. Specific eligibility and purchase requirements can depend on the NRI's circumstances and the type of property, so these should be confirmed before proceeding.",
+    },
+
+    {
+        id: "faq-7",
+        question: "Do you help with home loans?",
+        answer:
+            "We do not directly provide or process home loans. However, we can guide you toward suitable and trusted banking or financial partners based on your requirements. Our team can also help you understand the general documentation and property-related information you may need while exploring financing options for your real estate purchase.",
+    },
+
+    {
+        id: "faq-8",
+        question: "How can I book a site visit?",
+        answer:
+            "You can book a site visit by calling our team at +91 7388481515 or by submitting an enquiry through our Contact page. Share your preferred property, location, and suitable timing, and our team will coordinate the visit accordingly and provide the relevant property details before or during the site visit.",
     },
 ];

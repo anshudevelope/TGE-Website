@@ -45,7 +45,7 @@ export default function HomeHero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
-                        className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.15] tracking-tight font-sans"
+                        className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight font-sans"
                     >
                         Prime Properties. <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-300 to-amber-500">
@@ -113,7 +113,7 @@ export default function HomeHero() {
                             height={36}
                             className="w-9 h-9 rounded-full border-2 border-slate-900 object-cover"
                         />
-                        <div className="w-9 h-9 rounded-full border-2 border-slate-900 bg-amber-500 text-slate-950 font-extrabold text-xs flex items-center justify-center">
+                        <div className="w-9 h-9 rounded-full border-2 border-slate-900 bg-amber-500 text-slate-950 font-bold text-xs flex items-center justify-center">
                             +
                         </div>
                     </div>

@@ -118,7 +118,7 @@ export default function Services() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.1 }}
-                        className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900"
+                        className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900"
                     >
                         Our Core <span className="text-amber-600">Real Estate Services</span>
                     </motion.h2>
@@ -220,7 +220,7 @@ export default function Services() {
                 {/* Bottom Banner Call to Action */}
                 <div className="bg-slate-900 rounded-3xl p-8 sm:p-10 border border-amber-500/30 text-white shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
                     <div className="space-y-2 text-center md:text-left">
-                        <h4 className="text-xl sm:text-2xl font-extrabold text-white">
+                        <h4 className="text-xl sm:text-2xl font-bold text-white">
                             Need Custom Real Estate Consultation in Prayagraj?
                         </h4>
                         <p className="text-slate-300 text-sm max-w-xl">
@@ -234,7 +234,7 @@ export default function Services() {
                             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-amber-500 text-slate-950 hover:bg-amber-400 font-bold text-xs sm:text-sm transition-all shadow-lg active:scale-95 cursor-pointer"
                         >
                             <PhoneCall className="w-4 h-4" />
-                            <span>Call +91 98765 43210</span>
+                            <span>Call +91 7388 481515</span>
                         </a>
                     </div>
                 </div>

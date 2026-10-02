@@ -23,7 +23,7 @@ export default function NotFound() {
             />
           </div>
           <div className="flex flex-col">
-            <span className="text-base font-extrabold tracking-wide text-slate-900 uppercase">
+            <span className="text-base font-bold tracking-wide text-slate-900 uppercase">
               The Great Empire<span className="text-amber-600"> Group</span>
             </span>
             <span className="text-[9px] text-slate-500 tracking-widest -mt-1 font-mono uppercase font-bold">
@@ -69,7 +69,7 @@ export default function NotFound() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight"
+              className="text-2xl sm:text-4xl font-bold text-slate-900 tracking-tight"
             >
               Property or Page Not Found
             </motion.h1>

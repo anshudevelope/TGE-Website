@@ -26,7 +26,7 @@ const prayagrajLocalities = [
 const quickLinks = [
     { name: "Buy Property in Prayagraj", href: "/buy" },
     { name: "Sell / Post Property Free", href: "/list-property" },
-    { name: "Real Estate Consultancy", href: "/consultancy" },
+    { name: "Real Estate Consultancy", href: "/property-consultant" },
     { name: "About The Empire Group", href: "/about" },
     { name: "Contact & Location", href: "/contact" },
 ];
@@ -46,7 +46,7 @@ export default function Footer() {
                         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-mono font-bold tracking-wider uppercase border border-amber-500/30">
                             <ShieldCheck className="w-3.5 h-3.5 text-amber-400" /> Prayagraj Real Estate Leaders
                         </span>
-                        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-tight">
+                        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight leading-tight">
                             Looking to Buy, Sell, or Invest in Prayagraj?
                         </h3>
                         <p className="text-slate-300 text-sm sm:text-base">
@@ -81,7 +81,7 @@ export default function Footer() {
                         <Link href="/" className="inline-flex items-center gap-3 cursor-pointer">
                             <div className="relative w-11 h-11 rounded-xl bg-slate-900 p-1 flex items-center justify-center shadow-md overflow-hidden">
                                 <Image
-                                    src="/the-great-empire-logo.png"
+                                    src="/the-great-empire-logo.jpeg"
                                     alt="The Great Empire Group Logo"
                                     width={40}
                                     height={40}
@@ -89,7 +89,7 @@ export default function Footer() {
                                 />
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-lg font-extrabold tracking-wide text-slate-900 uppercase">
+                                <span className="text-lg font-bold tracking-wide text-slate-900 uppercase">
                                     The Great Empire<span className="text-amber-600"> Group</span>
                                 </span>
                                 <span className="text-[10px] text-slate-500 tracking-widest -mt-1 font-mono uppercase font-bold">
@@ -110,7 +110,7 @@ export default function Footer() {
                                 <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-white transition-colors">
                                     <PhoneCall className="w-4 h-4 text-amber-600 group-hover:text-white" />
                                 </div>
-                                <span>+91 98765 43210 / +91 91234 56789</span>
+                                <span>+91 7388 481515 / +91 91234 56789</span>
                             </a>
 
                             <a

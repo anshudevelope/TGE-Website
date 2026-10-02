@@ -109,7 +109,7 @@ export default function ContactHero() {
                   </div>
 
                   <div className="space-y-1">
-                    <h3 className="text-lg font-extrabold text-slate-900">
+                    <h3 className="text-lg font-bold text-slate-900">
                       {card.title}
                     </h3>
                     <p className="text-xs text-slate-500">{card.subtitle}</p>
@@ -146,7 +146,7 @@ export default function ContactHero() {
               <Clock className="w-6 h-6" />
             </div>
             <div className="space-y-0.5">
-              <h4 className="text-lg font-extrabold text-white">
+              <h4 className="text-lg font-bold text-white">
                 Office Hours & Consultation Timings
               </h4>
               <p className="text-slate-300 text-xs sm:text-sm">

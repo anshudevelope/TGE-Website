@@ -90,7 +90,7 @@ export default function Map() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.1 }}
-                        className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900"
+                        className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900"
                     >
                         Explore Prayagraj&apos;s Top <span className="text-amber-600">Real Estate Hubs</span>
                     </motion.h2>
@@ -121,7 +121,7 @@ export default function Map() {
                         <div className="bg-slate-900 text-white px-6 py-3.5 flex items-center justify-between gap-4 border-b border-amber-500/30">
                             <div className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-amber-300">
                                 <Navigation className="w-4 h-4 text-amber-400 animate-pulse" />
-                                <span>Showing Map Location: <strong className="text-white font-extrabold">{selectedHubName}, Prayagraj</strong></span>
+                                <span>Showing Map Location: <strong className="text-white font-bold">{selectedHubName}, Prayagraj</strong></span>
                             </div>
 
                             <a
@@ -161,7 +161,7 @@ export default function Map() {
                     >
                         {/* Locality Selector Panel */}
                         <div className="bg-white rounded-3xl border border-amber-900/10 p-6 shadow-xl shadow-slate-200/60 space-y-4">
-                            <h3 className="text-lg font-extrabold text-slate-900 flex items-center gap-2">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
                                 <MapPin className="w-5 h-5 text-amber-600" />
                                 <span>Select Target Zone</span>
                             </h3>
@@ -216,7 +216,7 @@ export default function Map() {
                             </div>
 
                             <div className="space-y-1">
-                                <h4 className="text-xl font-extrabold text-white">
+                                <h4 className="text-xl font-bold text-white">
                                     The Great Empire Group
                                 </h4>
                                 <p className="text-slate-300 text-xs leading-relaxed">
@@ -230,7 +230,7 @@ export default function Map() {
                                     className="flex items-center gap-2.5 text-slate-300 hover:text-amber-400 transition-colors"
                                 >
                                     <PhoneCall className="w-4 h-4 text-amber-500 shrink-0" />
-                                    <span>+91 98765 43210</span>
+                                    <span>+91 7388 481515</span>
                                 </a>
                                 <a
                                     href="mailto:info@thegreatempiregroup.com"

@@ -49,7 +49,7 @@ export default function FAQs({
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.1 }}
-                        className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900"
+                        className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900"
                     >
                         {title} <span className="text-amber-600">{highlightTitle}</span>
                     </motion.h2>
@@ -123,7 +123,7 @@ export default function FAQs({
                 {/* Bottom Contact CTA Card */}
                 <div className="bg-slate-900 rounded-3xl p-6 sm:p-8 border border-amber-500/30 text-white shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
                     <div className="space-y-1 text-center sm:text-left">
-                        <h4 className="text-lg font-extrabold text-white">
+                        <h4 className="text-lg font-bold text-white">
                             Still have questions about properties in Prayagraj?
                         </h4>
                         <p className="text-slate-300 text-xs sm:text-sm">

@@ -36,7 +36,7 @@ const servicesMenu = [
         icon: Compass,
         title: "Real Estate Consultancy",
         description: "Expert advice on legal verification, plot land registry & ROI deals.",
-        href: "/consultancy",
+        href: "/property-consultant",
     },
     {
         icon: PlusCircle,
@@ -96,7 +96,7 @@ export default function Navbar() {
                     <Link href="/" className="flex items-center gap-3 group cursor-pointer">
                         <div className="relative w-10 h-10 rounded-xl bg-slate-900 p-[1px] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform overflow-hidden">
                             <Image
-                                src="/the-great-empire-logo.png"
+                                src="/the-great-empire-logo.jpeg"
                                 alt="The Great Empire Group Logo"
                                 width={38}
                                 height={38}
@@ -105,7 +105,7 @@ export default function Navbar() {
                             />
                         </div>
                         <div className="flex flex-col">
-                            <span className="text-base sm:text-lg font-extrabold tracking-wide text-slate-900 uppercase font-sans">
+                            <span className="text-base sm:text-lg font-medium tracking-wide text-slate-900 uppercase font-sans">
                                 The Great Empire<span className="text-amber-600"> Group</span>
                             </span>
                             <span className="text-[10px] text-slate-500 tracking-widest -mt-1 font-mono uppercase font-semibold">
@@ -291,7 +291,7 @@ export default function Navbar() {
                                 <span className="block text-[9px] text-slate-400 uppercase font-mono leading-none">
                                     Expert Advice
                                 </span>
-                                <span className="text-xs font-bold text-slate-900">+91 98765 43210</span>
+                                <span className="text-xs font-bold text-slate-900">+91 7388 481515</span>
                             </div>
                         </a>
 
@@ -345,17 +345,16 @@ export default function Navbar() {
                                     className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-slate-100 text-slate-900 font-bold text-xs border border-slate-200 cursor-pointer"
                                 >
                                     <PhoneCall className="w-4 h-4 text-amber-600" />
-                                    Call Expert: +91 98765 43210
+                                    Call Expert: +91 7388 481515
                                 </a>
 
-                                <Link
-                                    href="/list-property"
-                                    onClick={() => setMobileMenuOpen(false)}
+
+                                <button
+                                    onClick={() => openModal("Want to Buy - Plot")}
                                     className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-slate-900 text-amber-400 font-bold text-sm shadow-md cursor-pointer"
                                 >
-                                    <PlusCircle className="w-4 h-4" />
-                                    Post Property Free
-                                </Link>
+                                    Get Free Consultation
+                                </button>
                             </div>
                         </motion.div>
                     )}

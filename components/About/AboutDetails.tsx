@@ -140,7 +140,7 @@ export default function AboutDetails() {
                             <Compass className="w-6 h-6" />
                         </div>
 
-                        <h3 className="text-2xl font-extrabold text-slate-900">Our Vision</h3>
+                        <h3 className="text-2xl font-bold text-slate-900">Our Vision</h3>
 
                         <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                             To fulfill the growing aspirations of our customers and business associates by building a world-class real estate sales corporate that redefines professionalism, integrity, and lifestyle standards across Uttar Pradesh and India.
@@ -159,7 +159,7 @@ export default function AboutDetails() {
                             <Target className="w-6 h-6" />
                         </div>
 
-                        <h3 className="text-2xl font-extrabold text-slate-900">Our Mission</h3>
+                        <h3 className="text-2xl font-bold text-slate-900">Our Mission</h3>
 
                         <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                             Our mission is to establish a premier real estate sales organization with unyielding commitment to customer service, transparent legal processes, and creating sustainable business and employment opportunities within the growing Indian economy.
@@ -210,7 +210,7 @@ export default function AboutDetails() {
                 {/* Section 4: Contact CTA Banner */}
                 <div className="bg-slate-900 rounded-3xl p-8 sm:p-12 border border-amber-500/30 text-white shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8">
                     <div className="space-y-2 text-center lg:text-left max-w-2xl">
-                        <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white">
                             Ready to Explore Properties with Us?
                         </h3>
                         <p className="text-slate-300 text-sm sm:text-base leading-relaxed">

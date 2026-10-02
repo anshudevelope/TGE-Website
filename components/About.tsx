@@ -43,7 +43,7 @@ export default function About() {
                                     <Award className="w-6 h-6" />
                                 </div>
                                 <div>
-                                    <div className="text-2xl sm:text-3xl font-extrabold text-amber-400 font-sans leading-none">
+                                    <div className="text-2xl sm:text-3xl font-bold text-amber-400 font-sans leading-none">
                                         5+ Years
                                     </div>
                                     <div className="text-xs font-semibold text-slate-300 mt-1 uppercase font-mono tracking-wider">
@@ -69,7 +69,7 @@ export default function About() {
                         </div>
 
                         {/* Main Headline */}
-                        <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900">
+                        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">
                             Best Real Estate Advisor in{" "}
                             <span className="text-amber-600">Prayagraj</span>
                         </h2>

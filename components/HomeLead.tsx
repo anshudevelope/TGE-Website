@@ -285,7 +285,7 @@ export default function HomeLead() {
                         ) : (
                             <form onSubmit={handleSubmit} className="space-y-5">
                                 <div className="space-y-1">
-                                    <h3 className="text-md sm:text-xl font-extrabold text-slate-900 tracking-tight">
+                                    <h3 className="text-md sm:text-xl font-bold text-slate-900 tracking-tight">
                                         Send us a message
                                     </h3>
                                     <p className="text-xs sm:text-sm text-slate-600">
@@ -346,7 +346,7 @@ export default function HomeLead() {
                                             required
                                             value={formData.phone}
                                             onChange={handleChange}
-                                            placeholder="+91 98765 43210"
+                                            placeholder="+91 7388 481515"
                                             className="w-full px-4 py-3 rounded-xl bg-white/80 border border-slate-200/90 text-slate-900 placeholder-slate-400 text-xs sm:text-sm focus:border-amber-500 focus:bg-white focus:ring-2 focus:ring-amber-500/20 outline-none transition-all shadow-xs"
                                         />
                                     </div>
