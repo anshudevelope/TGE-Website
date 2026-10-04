@@ -30,7 +30,7 @@ const servicesMenu = [
         icon: TrendingUp,
         title: "Sell / Value Your Property",
         description: "Get accurate market valuation & connect directly with verified buyers.",
-        href: "/sell",
+        href: "/sell-property",
     },
     {
         icon: Compass,
@@ -264,7 +264,7 @@ export default function Navbar() {
                         </Link>
 
                         <Link
-                            href="/sell"
+                            href="/sell-property"
                             className="text-sm font-semibold text-slate-700 hover:text-slate-950 px-4 py-2 rounded-full hover:bg-white transition-all cursor-pointer"
                         >
                             Sell

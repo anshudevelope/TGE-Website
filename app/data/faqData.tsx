@@ -281,3 +281,75 @@ export const buyPropertyFaqs: FAQItem[] = [
         ),
     },
 ];
+
+export const sellPropertyFaqs: FAQItem[] = [
+    {
+        id: "faq-1",
+        question: "How can I sell my property in Prayagraj quickly?",
+        answer:
+            "To sell your property quickly, it helps to set a realistic price, keep your property documents ready, present the property properly, and reach genuine buyers. Our team can assist with property valuation, buyer screening, negotiation, and guidance throughout the selling process.",
+    },
+
+    {
+        id: "faq-2",
+        question: "How do I know the right selling price for my property?",
+        answer:
+            "The right selling price depends on factors such as the property's location, size, road access, approvals, condition, and prevailing market rates for similar properties nearby. We can provide a free valuation based on these factors to help you determine a realistic asking price.",
+    },
+
+    {
+        id: "faq-3",
+        question: "What documents do I need to sell my property in Prayagraj?",
+        answer:
+            "You will generally need documents such as the sale deed or registry, mutation records, property tax receipts, an encumbrance certificate, and valid identity proof. For flats or properties in societies, additional documents such as a society NOC and maintenance receipts may also be required. The exact requirements can vary depending on the property and transaction.",
+    },
+
+    {
+        id: "faq-4",
+        question: "Do I have to pay to sell my property through you?",
+        answer:
+            "No, there is no mandatory fee just to explore the option of selling your property through us. We provide property owners with an opportunity to list and promote their property to reach genuine buyers. Depending on the selling option, property type, services required, and the final transaction, applicable service or brokerage terms may vary. Our team will clearly explain any applicable charges or terms to you before proceeding, so you can make an informed decision.",
+    },
+
+    {
+        id: "faq-5",
+        question: "Can I sell a plot or agricultural land in Prayagraj?",
+        answer:
+            "Yes, residential plots and other types of land can be sold subject to the applicable documents, ownership records, approvals, and land-use requirements. Agricultural land may be subject to additional rules and restrictions depending on the land classification, buyer, and intended use. We recommend verifying the property's legal and land-use status before listing it for sale.",
+    },
+
+    {
+        id: "faq-6",
+        question: "Will my contact details be shared publicly?",
+        answer:
+            "No, your personal contact details are not displayed publicly without your permission. Your information may be shared with screened and genuine buyers when necessary to facilitate enquiries about your property. We aim to protect your privacy while helping you connect with serious buyers.",
+    },
+
+    {
+        id: "faq-7",
+        question: "Is there any tax when I sell property in Prayagraj?",
+        answer:
+            "Capital gains tax may apply when you sell a property, depending on factors such as the property's acquisition cost, holding period, and applicable tax rules. TDS may also apply to certain property transactions depending on the transaction value and applicable regulations. Since tax liability varies from one situation to another, we recommend consulting a qualified chartered accountant or tax professional for advice specific to your transaction.",
+    },
+
+    {
+        id: "faq-8",
+        question: "How do I get started with selling my property?",
+        answer: (
+            <p>
+                You can get started by filling out our property valuation form or
+                by calling or WhatsApping our team at{" "}
+                <a
+                    href="tel:+917388481515"
+                    className="font-medium text-primary hover:underline"
+                >
+                    +91 7388 481515
+                </a>
+                . Share basic details about your property, including its location,
+                type, size, and your expected price. Our team will contact you to
+                understand your requirements and explain the next steps for listing
+                and selling your property.
+            </p>
+        ),
+    },
+];
