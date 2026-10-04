@@ -24,7 +24,7 @@ const prayagrajLocalities = [
 ];
 
 const quickLinks = [
-    { name: "Buy Property in Prayagraj", href: "/buy" },
+    { name: "Buy Property in Prayagraj", href: "/buy-property" },
     { name: "Sell / Post Property Free", href: "/list-property" },
     { name: "Real Estate Consultancy", href: "/property-consultant" },
     { name: "About The Empire Group", href: "/about" },

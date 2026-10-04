@@ -24,7 +24,7 @@ const servicesMenu = [
         icon: Home,
         title: "Buy Property in Prayagraj",
         description: "Explore luxury apartments, plots, and villas in top localities.",
-        href: "/buy",
+        href: "/buy-property",
     },
     {
         icon: TrendingUp,
@@ -257,7 +257,7 @@ export default function Navbar() {
                         </div>
 
                         <Link
-                            href="/buy"
+                            href="/buy-property"
                             className="text-sm font-semibold text-slate-700 hover:text-slate-950 px-4 py-2 rounded-full hover:bg-white transition-all cursor-pointer"
                         >
                             Buy
