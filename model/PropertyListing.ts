@@ -1,4 +1,5 @@
 import mongoose, { Schema, Document, Model } from "mongoose";
+import { LISTING_STATUSES, DEFAULT_LISTING_STATUS, type ListingStatus } from "@/lib/adminOptions";
 
 export interface IPropertyListing extends Document {
   yourName: string;
@@ -16,6 +17,7 @@ export interface IPropertyListing extends Document {
   propertyPhotos: string[];
   additionalDetails?: string;
   consent: boolean;
+  status: ListingStatus;
   createdAt: Date;
 }
 
@@ -36,9 +38,15 @@ const PropertyListingSchema: Schema<IPropertyListing> = new Schema(
     propertyPhotos: [{ type: String }],
     additionalDetails: { type: String, maxlength: 150 },
     consent: { type: Boolean, required: true },
+    status: { type: String, enum: LISTING_STATUSES, default: DEFAULT_LISTING_STATUS, index: true },
   },
   { timestamps: true }
 );
+
+// In development, drop the cached model so schema edits apply without a server restart
+if (process.env.NODE_ENV !== "production" && mongoose.models.PropertyListing) {
+  mongoose.deleteModel("PropertyListing");
+}
 
 const PropertyListing: Model<IPropertyListing> =
   mongoose.models.PropertyListing || mongoose.model<IPropertyListing>("PropertyListing", PropertyListingSchema);

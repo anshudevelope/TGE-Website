@@ -1,0 +1,15 @@
+/* Admin panel entrance animations (confirm dialog + dropdown menu).
+   Imported only by the admin layout so the public site's CSS is untouched. */
+@keyframes admin-dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+}
+
+@keyframes admin-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}

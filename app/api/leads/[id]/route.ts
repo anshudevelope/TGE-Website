@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { dbConnect } from "@/lib/dbConnect";
 import Lead from "@/model/Lead";
+import { LEAD_STATUSES } from "@/lib/adminOptions";
 
 // 1. GET SINGLE LEAD
 export async function GET(
@@ -28,7 +29,7 @@ export async function GET(
     }
 }
 
-// 2. UPDATE LEAD DETAILS OR CHANGE STATUS
+// 2. CHANGE LEAD STATUS
 export async function PATCH(
     request: Request,
     { params }: { params: Promise<{ id: string }> }
@@ -36,9 +37,17 @@ export async function PATCH(
     try {
         await dbConnect();
         const { id } = await params;
-        const body = await request.json();
+        const { status } = await request.json();
 
-        const updatedLead = await Lead.findByIdAndUpdate(id, body, {
+        // Only the status is editable from the admin panel
+        if (!LEAD_STATUSES.includes(status)) {
+            return NextResponse.json(
+                { success: false, message: `Status must be one of: ${LEAD_STATUSES.join(", ")}.` },
+                { status: 400 }
+            );
+        }
+
+        const updatedLead = await Lead.findByIdAndUpdate(id, { status }, {
             new: true,
             runValidators: true,
         });

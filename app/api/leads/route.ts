@@ -1,18 +1,46 @@
 import { NextResponse } from "next/server";
 import { dbConnect } from "@/lib/dbConnect";
 import Lead from "@/model/Lead";
+import { DEFAULT_LEAD_STATUS } from "@/lib/adminOptions";
+import { parsePagination, escapeRegex, statusCondition, countByStatus } from "@/lib/listQuery";
 
-// 1. GET ALL LEADS (Admin List View)
+// 1. GET LEADS (Admin List View) — paginated, filterable
+// Query params: page, limit, status, queryType, search, sort (newest | oldest)
 export async function GET(request: Request) {
     try {
         await dbConnect();
         const { searchParams } = new URL(request.url);
-        const statusFilter = searchParams.get("status");
+        const { page, limit, skip } = parsePagination(searchParams);
 
-        const query = statusFilter ? { status: statusFilter } : {};
-        const leads = await Lead.find(query).sort({ createdAt: -1 });
+        const status = searchParams.get("status");
+        const queryType = searchParams.get("queryType");
+        const search = searchParams.get("search")?.trim();
+        const sortOrder = searchParams.get("sort") === "oldest" ? 1 : -1;
 
-        return NextResponse.json({ success: true, count: leads.length, data: leads });
+        // Filters shared by the list and the per-status counts
+        const baseMatch: Record<string, unknown> = {};
+        if (queryType) baseMatch.queryType = queryType;
+        if (search) {
+            const pattern = new RegExp(escapeRegex(search), "i");
+            baseMatch.$or = [{ name: pattern }, { phone: pattern }, { email: pattern }, { city: pattern }];
+        }
+
+        const listMatch = status
+            ? { $and: [baseMatch, statusCondition(status, DEFAULT_LEAD_STATUS)] }
+            : baseMatch;
+
+        const [leads, total, counts] = await Promise.all([
+            Lead.find(listMatch).sort({ createdAt: sortOrder }).skip(skip).limit(limit).lean(),
+            Lead.countDocuments(listMatch),
+            countByStatus(Lead, baseMatch, DEFAULT_LEAD_STATUS),
+        ]);
+
+        return NextResponse.json({
+            success: true,
+            data: leads.map((lead) => ({ ...lead, status: lead.status || DEFAULT_LEAD_STATUS })),
+            pagination: { page, limit, total, totalPages: Math.max(1, Math.ceil(total / limit)) },
+            counts,
+        });
     } catch (error: any) {
         console.error("GET Leads Error:", error);
         return NextResponse.json(
