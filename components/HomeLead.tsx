@@ -43,11 +43,7 @@ export default function HomeLead() {
         setIsSubmitting(true);
         setErrorMessage("");
 
-        try {
-            // ------------------------------------------------------------------
-            // API INTEGRATION POINT
-            // Replace '/api/leads' with your actual API endpoint URL when ready.
-            // ------------------------------------------------------------------
+        try {         
             const response = await fetch("/api/leads", {
                 method: "POST",
                 headers: {

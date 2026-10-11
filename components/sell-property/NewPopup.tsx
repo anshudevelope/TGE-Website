@@ -35,7 +35,7 @@ export default function NewPopup() {
                 <button
                     onClick={handleClose}
                     aria-label="Close Announcement"
-                    className="absolute top-3 right-3 z-20 w-9 h-9 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white flex items-center justify-center backdrop-blur-md border border-white/20 transition-all hover:scale-105 shadow-lg"
+                    className="absolute top-3 right-3 z-20 w-9 h-9 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white flex items-center justify-center backdrop-blur-md border border-white/20 transition-all hover:scale-105 shadow-lg cursor-pointer"
                 >
                     ✕
                 </button>

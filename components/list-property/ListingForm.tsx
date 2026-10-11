@@ -235,7 +235,7 @@ export default function ListingForm() {
                 const uploadFormData = new FormData();
                 files.forEach((item) => uploadFormData.append("files", item.file));
 
-                const uploadRes = await fetch("/api/upload", {
+                const uploadRes = await fetch("/api/uploads", {
                     method: "POST",
                     body: uploadFormData,
                 });
@@ -246,7 +246,7 @@ export default function ListingForm() {
                 uploadedPhotoUrls = uploadData.urls;
             }
 
-            const res = await fetch("/api/property-listing", {
+            const res = await fetch("/api/list-property", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
