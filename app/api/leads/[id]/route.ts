@@ -5,11 +5,12 @@ import Lead from "@/model/Lead";
 // 1. GET SINGLE LEAD
 export async function GET(
     request: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
         await dbConnect();
-        const lead = await Lead.findById(params.id);
+        const { id } = await params;
+        const lead = await Lead.findById(id);
 
         if (!lead) {
             return NextResponse.json(
@@ -30,13 +31,14 @@ export async function GET(
 // 2. UPDATE LEAD DETAILS OR CHANGE STATUS
 export async function PATCH(
     request: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
         await dbConnect();
+        const { id } = await params;
         const body = await request.json();
 
-        const updatedLead = await Lead.findByIdAndUpdate(params.id, body, {
+        const updatedLead = await Lead.findByIdAndUpdate(id, body, {
             new: true,
             runValidators: true,
         });
@@ -64,11 +66,12 @@ export async function PATCH(
 // 3. DELETE SINGLE LEAD
 export async function DELETE(
     request: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
         await dbConnect();
-        const deletedLead = await Lead.findByIdAndDelete(params.id);
+        const { id } = await params;
+        const deletedLead = await Lead.findByIdAndDelete(id);
 
         if (!deletedLead) {
             return NextResponse.json(
