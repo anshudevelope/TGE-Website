@@ -88,36 +88,8 @@ export default function HomeHero() {
                     initial={{ opacity: 0, scale: 0.9, y: 20 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
-                    className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 z-20 bg-slate-900/80 backdrop-blur-xl border border-amber-500/20 rounded-2xl p-4 sm:p-5 text-white max-w-[260px] sm:max-w-[280px] shadow-2xl"
+                    className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 z-20 bg-slate-900/80 backdrop-blur-xl border border-amber-500/20 hidden md:flex rounded-2xl p-4 sm:p-5 text-white max-w-[260px] sm:max-w-[280px] shadow-2xl"
                 >
-                    {/* Avatar Heap */}
-                    <div className="flex items-center -space-x-2.5 mb-3">
-                        <Image
-                            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
-                            alt="Satisfied Buyer Prayagraj"
-                            width={36}
-                            height={36}
-                            className="w-9 h-9 rounded-full border-2 border-slate-900 object-cover"
-                        />
-                        <Image
-                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
-                            alt="Verified Client"
-                            width={36}
-                            height={36}
-                            className="w-9 h-9 rounded-full border-2 border-slate-900 object-cover"
-                        />
-                        <Image
-                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
-                            alt="Property Investor"
-                            width={36}
-                            height={36}
-                            className="w-9 h-9 rounded-full border-2 border-slate-900 object-cover"
-                        />
-                        <div className="w-9 h-9 rounded-full border-2 border-slate-900 bg-amber-500 text-slate-950 font-bold text-xs flex items-center justify-center">
-                            +
-                        </div>
-                    </div>
-
                     {/* Metric Stats */}
                     <div className="space-y-1">
                         <div className="flex items-center gap-1 text-amber-400">
