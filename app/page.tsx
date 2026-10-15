@@ -11,8 +11,26 @@ import LatestProject from "@/components/LatestProject";
 import NewPopup from "@/components/sell-property/NewPopup";
 
 export default function Home() {
+  // Construct FAQ JSON-LD dynamically from your faqData
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": homeFaqs.map((faq: any) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Navbar />
       <HomeHero />
       <About />

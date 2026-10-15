@@ -233,11 +233,11 @@ export default function Map() {
                                     <span>+91 7388 481515</span>
                                 </a>
                                 <a
-                                    href="mailto:info@thegreatempiregroup.com"
+                                    href="mailto:thegreatempiregroup@gmail.com"
                                     className="flex items-center gap-2.5 text-slate-300 hover:text-amber-400 transition-colors"
                                 >
                                     <Mail className="w-4 h-4 text-amber-500 shrink-0" />
-                                    <span>info@thegreatempiregroup.com</span>
+                                    <span>thegreatempiregroup@gmail.com</span>
                                 </a>
                             </div>
 

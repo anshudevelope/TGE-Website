@@ -255,10 +255,10 @@ export default function PrivacyPolicy() {
                                 <span>Email Us</span>
                             </div>
                             <a
-                                href="mailto:info@thegreatempiregroup.com"
+                                href="mailto:thegreatempiregroup@gmail.com"
                                 className="text-xs text-slate-800 hover:text-amber-600 font-semibold transition-colors block break-all"
                             >
-                                info@thegreatempiregroup.com
+                                thegreatempiregroup@gmail.com
                             </a>
                         </div>
 

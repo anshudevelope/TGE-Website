@@ -104,30 +104,30 @@ export default function Footer() {
 
                         <div className="pt-2 space-y-2.5">
                             <a
-                                href="tel:+919876543210"
+                                href="tel:+917388481515 "
                                 className="flex items-center gap-3 text-xs font-semibold text-slate-700 hover:text-amber-600 transition-colors cursor-pointer group"
                             >
                                 <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-white transition-colors">
                                     <PhoneCall className="w-4 h-4 text-amber-600 group-hover:text-white" />
                                 </div>
-                                <span>+91 7388 481515 / +91 91234 56789</span>
+                                <span>+91 7388 481515 </span>
                             </a>
 
                             <a
-                                href="mailto:info@thegreatempiregroup.com"
+                                href="mailto:thegreatempiregroup@gmail.com"
                                 className="flex items-center gap-3 text-xs font-semibold text-slate-700 hover:text-amber-600 transition-colors cursor-pointer group"
                             >
                                 <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-white transition-colors">
                                     <Mail className="w-4 h-4 text-amber-600 group-hover:text-white" />
                                 </div>
-                                <span>info@thegreatempiregroup.com</span>
+                                <span>thegreatempiregroup@gmail.com</span>
                             </a>
 
                             <div className="flex items-start gap-3 text-xs font-semibold text-slate-700">
                                 <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center shrink-0">
                                     <MapPin className="w-4 h-4 text-amber-600" />
                                 </div>
-                                <span>Civil Lines, Prayagraj (Allahabad), Uttar Pradesh - 211001, India</span>
+                                <span>52/42 Taskand Marg, Civil Lines<br />Prayagraj, 211001 Uttar Pradesh, India</span>
                             </div>
                         </div>
                     </div>

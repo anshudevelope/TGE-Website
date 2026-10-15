@@ -92,9 +92,10 @@ export default function SellPropertyHelp() {
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900">
                         Our Property Selling Services in Prayagraj
                     </h2>
-                    <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-                        From the first call to the final registry, we manage the parts of
-                        selling that take the most time and effort.
+                    <p className="text-base text-slate-600 font-normal leading-relaxed">
+                        Selling a plot, flat, house, shop, or land? The Great Empire
+                        Group connects you with genuine buyers and supports you from
+                        pricing to final registry.
                     </p>
                 </div>
 
