@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.greatempire.in"),
   title: "Real Estate & Property Consultants in Prayagraj | The Great Empire Group",
+  icons: {
+    icon: "/tge-favicon.jpeg",
+  },
 
   description:
     "Leading real estate consultants in Prayagraj. Buy, sell, or invest in verified residential plots, commercial properties, and land with 100% legal registry and RERA assurance.",

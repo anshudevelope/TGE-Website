@@ -9,6 +9,7 @@ import Map from "@/components/Map";
 import HomeLead from "@/components/HomeLead";
 import LatestProject from "@/components/LatestProject";
 import NewPopup from "@/components/sell-property/NewPopup";
+import LiveApartment from "@/components/LiveApartment";
 
 export default function Home() {
   // Construct FAQ JSON-LD dynamically from your faqData
@@ -36,6 +37,7 @@ export default function Home() {
       <About />
       <Services />
       <LatestProject />
+      <LiveApartment />
       <FAQs items={homeFaqs} />
       <HomeLead />
       <Map />

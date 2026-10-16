@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -22,7 +21,7 @@ export default function About() {
                     >
                         <div className="relative rounded-3xl overflow-hidden border border-amber-900/10 shadow-2xl shadow-slate-200/80 aspect-[4/3] sm:aspect-[16/11]">
                             <Image
-                                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80"
+                                src="/real-estate-advisor.png"
                                 alt="The Great Empire Group Real Estate Advisory Prayagraj"
                                 fill
                                 className="object-cover object-center hover:scale-105 transition-transform duration-700"

@@ -1,6 +1,4 @@
 "use client";
-
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -15,7 +13,6 @@ import {
     ShieldCheck,
     PhoneCall,
 } from "lucide-react";
-import { div } from "framer-motion/m";
 
 const servicesData = [
     {
@@ -26,12 +23,13 @@ const servicesData = [
             "As our primary business, The Great Empire Group is an independent real estate consultant and service provider with a committed customer base. Our primary focus is on bridging the gap between property and client to help clients realize measurable business value from their investments. We help clients find commercial, residential, and plot properties keeping in mind their requirements, choice of location across Prayagraj & UP, and within their budget.",
         icon: Building2,
         image:
-            "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+            "/consultant-hero.png",
         features: [
             "Targeted Property Matching in Prayagraj",
             "Budget & ROI Optimization Analysis",
             "End-to-End Legal & Registry Verification",
         ],
+        link: "/property-consultant"
     },
     {
         id: "resale",
@@ -47,6 +45,7 @@ const servicesData = [
             "Accurate Market Valuation Assessment",
             "Hassle-Free Title Transfer & Sales Agreement",
         ],
+        link: "/sell-property"
     },
     {
         id: "buy-advisory",
@@ -62,6 +61,7 @@ const servicesData = [
             "Fair Market Price Negotiation & Budget Matching",
             "Seamless Legal Documentation & Title Registration",
         ],
+        link: "/buy-property"
     },
     {
         id: "land",
@@ -71,27 +71,13 @@ const servicesData = [
             "Our specialized Land Management team provides agricultural land in acres, farmhouses, and recreational property to developers, investors, and institutions. Our experienced professionals have established industry best practices for land sourcing, boundary management, and legal clearance in Uttar Pradesh.",
         icon: Trees,
         image:
-            "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
+            "/plot-management-service.png",
         features: [
             "Large Agricultural Land & Acre Listings",
             "Clear Title & Khasra / Khatauni Audit",
             "Developer & Institution Partnership Models",
         ],
-    },
-    {
-        id: "construction",
-        title: "Construction & Development Services",
-        subtitle: "Turnkey Home Building & Commercial Development",
-        description:
-            "The Great Empire Group provides complete construction services to clients and landowners, helping build custom homes and commercial structures tailored to their needs. We assist clients not only financially but also by advising on the best possible usage of their property, maximizing commercial and functional value through our professional engineering network.",
-        icon: HardHat,
-        image:
-            "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
-        features: [
-            "Architectural Planning & Floor Plan Optimization",
-            "Turnkey Residential & Commercial Construction",
-            "Commercial Monetization Strategy for Landowners",
-        ],
+        link: "/contact"
     },
 ];
 
@@ -187,7 +173,7 @@ export default function Services() {
                                         {/* CTA Redirect to Contact Page */}
                                         <div className="pt-4">
                                             <Link
-                                                href="/contact"
+                                                href={service.link}
                                                 className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full bg-slate-900 text-amber-400 hover:bg-slate-800 font-bold text-xs sm:text-sm tracking-wide transition-all shadow-md active:scale-95 group cursor-pointer"
                                             >
                                                 <span>Inquire About This Service</span>
